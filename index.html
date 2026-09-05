@@ -69,17 +69,34 @@
   p, li { margin: 0 0 0.9rem; }
   ul { padding-left: 1.2rem; }
   li { margin-bottom: 0.6rem; }
-  .hero {
-    background: var(--hero); border-radius: 16px;
-    padding: 1.8rem 1.4rem 1.4rem; margin-bottom: 2rem;
+  .herobar {
+    background:
+      radial-gradient(120% 150% at 80% 6%, #7c4682 0%, rgba(124,70,130,0) 58%),
+      radial-gradient(115% 130% at 10% 96%, #2f2a5e 0%, rgba(47,42,94,0) 62%),
+      linear-gradient(158deg, #321d37 0%, #542e5f 50%, #6b2f6e 100%);
+    padding: 2.7rem 1.25rem 2.5rem;
+    margin-bottom: 2.2rem;
   }
-  .hero p { margin-bottom: 0.7rem; }
+  .herobar-inner {
+    max-width: 40rem; margin: 0 auto;
+    display: flex; align-items: center; gap: 1.4rem;
+  }
+  .herobar img {
+    width: 132px; height: 132px; flex: none; display: block;
+    border-radius: 30px;
+    box-shadow: 0 14px 34px rgba(0,0,0,0.42), 0 0 0 1px rgba(255,255,255,0.10);
+  }
+  .herobar h1 {
+    color: #ffffff; margin: 0 0 0.45rem; font-size: 2.25rem; line-height: 1.1;
+    letter-spacing: -0.015em;
+  }
+  .herobar .lede { color: #f2d9e8; font-size: 1.06rem; margin: 0 0 0.55rem; }
+  .herobar .who {
+    display: inline-block; margin: 0;
+    font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+    color: #ffbecd;
+  }
   .lede { font-size: 1.12rem; }
-  .who {
-    display: inline-block; margin: 0.4rem 0 0;
-    font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
-    color: var(--accent);
-  }
   .card {
     background: var(--panel); border: 1px solid var(--rule); border-radius: 12px;
     padding: 1.1rem 1.2rem 0.4rem; margin: 1.2rem 0;
@@ -100,20 +117,30 @@
   @media (max-width: 26rem) {
     body { font-size: 17px; }
     h1 { font-size: 1.75rem; }
-    .hero { padding: 1.3rem 1.1rem 1rem; }
+    .herobar { padding: 2rem 1.1rem 1.9rem; }
+    .herobar-inner { flex-direction: column; align-items: flex-start; gap: 1.05rem; }
+    .herobar img { width: 104px; height: 104px; border-radius: 24px; }
+    .herobar h1 { font-size: 1.85rem; }
   }
 </style>
 </head>
 <body>
-<div class="wrap">
 
-<div class="hero">
-  <h1>Squishiverse</h1>
-  <p class="lede">A place for a child to keep track of their squishy toys. Take
-  a picture of each one, give it a name, rate how it squishes, and tag what it
-  looks, feels, sounds and smells like.</p>
-  <p class="who">Made for ages 9 to 11 · iPhone and iPad</p>
+<div class="herobar">
+  <div class="herobar-inner">
+    <img src="icon.png" width="512" height="512"
+         alt="The Squishiverse app icon: a smiling pink bun in a starry purple sky">
+    <div class="herobar-text">
+      <h1>Squishiverse</h1>
+      <p class="lede">A place for a child to keep track of their squishy toys.
+      Take a picture of each one, give it a name, rate how it squishes, and tag
+      what it looks, feels, sounds and smells like.</p>
+      <p class="who">Made for ages 9 to 11 &middot; iPhone and iPad</p>
+    </div>
+  </div>
 </div>
+
+<div class="wrap">
 
 <p><a class="policy-link" href="privacy.html">Read the privacy policy</a></p>
 
