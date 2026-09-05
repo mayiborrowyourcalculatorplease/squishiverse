@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<!--
+  Squishiverse privacy policy, as a standalone page for GitHub Pages.
+
+  PROVENANCE, read before publishing:
+  Body rebuilt 2026-09-05 from docs/marketing/privacy-policy.md on branch
+  `privacy-policy-refresh` (tip 7b89bc6), which was re-verified line by line
+  against app source on `main` at b8ef8ad. This page follows that file's
+  wording. Page chrome (CSS, layout) is unchanged from the first draft.
+
+  Deliberately absent from this public page:
+    - the markdown's "Notes for the reviewer" section
+    - the sentence-to-source table (file paths mean nothing to a parent)
+    - every [LEGAL CHECK] marker; where one sat on a claim, the claim was
+      dropped or narrowed to the part that is verified in source
+    - the claim that deleting a squishy removes it from a friend's phone
+      (follows from CloudKit mirroring, never watched happen on two phones)
+    - the exact iOS Settings path for removing the iCloud copy (unverified
+      on the current iOS)
+
+  Filled 2026-09-05:
+    (date filled: 5 September 2026)
+    (name filled: Courtney Shoemaker, per Courtney 2026-09-05)
+  The review box has been removed.
+
+  House style: no em dashes, anywhere. Standing preference, 2026-09-05.
+
+  No external CSS, JavaScript, fonts, images or analytics. Opens from disk.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy for Squishiverse</title>
+<style>
+  :root {
+    --bg: #fdf8f5;
+    --panel: #ffffff;
+    --ink: #2f1a28;
+    --soft: #6b5261;
+    --head: #4a1f3d;
+    --accent: #a6376b;
+    --rule: #ecdde5;
+    --note-bg: #fff6dc;
+    --note-rule: #e3c86a;
+    --note-ink: #5a4508;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1018;
+      --panel: #261622;
+      --ink: #f2e6ed;
+      --soft: #bfa5b4;
+      --head: #ffd9ea;
+      --accent: #ff9dc4;
+      --rule: #3d2434;
+      --note-bg: #33270a;
+      --note-rule: #6d5716;
+      --note-ink: #f6e6b4;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 38rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+  header { margin-bottom: 2rem; }
+  .kicker {
+    font-size: 0.8rem; letter-spacing: 0.09em; text-transform: uppercase;
+    color: var(--accent); font-weight: 700; margin: 0 0 0.4rem;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; color: var(--head); margin: 0 0 0.5rem; }
+  h2 {
+    font-size: 1.25rem; line-height: 1.3; color: var(--head);
+    margin: 2.4rem 0 0.6rem; padding-top: 1.4rem; border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 1.02rem; margin: 1.6rem 0 0.4rem; color: var(--head); }
+  p, li { margin: 0 0 0.9rem; }
+  ul, ol { padding-left: 1.2rem; }
+  li { margin-bottom: 0.55rem; }
+  .updated { color: var(--soft); font-size: 0.95rem; margin: 0; }
+  .lede { font-size: 1.05rem; }
+  .card {
+    background: var(--panel); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 1rem 1.15rem 0.4rem; margin: 1.2rem 0;
+  }
+  .card ul { margin: 0; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  footer {
+    margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+    color: var(--soft); font-size: 0.92rem;
+  }
+  @media (max-width: 26rem) {
+    body { font-size: 17px; }
+    h1 { font-size: 1.6rem; }
+  }
+</style>
+</head>
+<body>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">Squishiverse</p>
+  <h1>Privacy policy</h1>
+  <p class="updated">Last updated: 5 September 2026</p>
+</header>
+
+<p class="lede">Squishiverse is an app for children to keep track of their
+squishy toys: take a picture of each one, give it a name, rate it, tag it, and
+(if a grown-up turns it on) show the collection to a friend. It is
+made for ages 9 to 11. This page says what happens to what your child puts in.</p>
+
+<p>Squishiverse is made by Courtney Shoemaker. &ldquo;We&rdquo; on this page
+means her, and nobody else.</p>
+
+<h2>The short version</h2>
+
+<div class="card">
+<ul>
+  <li><strong>Nothing your child types or photographs is sent to us.</strong>
+  There is no account, no sign-up, and no server of ours anywhere in the app.</li>
+  <li><strong>The pictures are made safe on the phone before they are saved.</strong>
+  Any face the phone finds is covered with a solid block. Nothing is uploaded to
+  do this.</li>
+  <li><strong>The collection lives on your child&rsquo;s phone and in your
+  family&rsquo;s own iCloud.</strong> Not with us.</li>
+  <li><strong>Showing the collection to a friend is off until a grown-up turns it
+  on</strong>, and so is trading, and so are notifications. All three are behind
+  one grown-up question.</li>
+  <li><strong>There are no ads, no tracking, no analytics, and no other
+  companies&rsquo; code in the app.</strong></li>
+</ul>
+</div>
+
+<h2>What the app stores</h2>
+
+<p>For each squishy, whatever your child chooses to add: a name, a picture, a
+type, a shop or brand, colours, size, what it is filled with, how it feels,
+sounds and smells, where it came from and when, star ratings, condition tags, a
+favourite ranking, notes, and whether she thinks it is real or a fake.</p>
+
+<p>She can also pick a name for herself: a first name or a nickname, up to
+twenty characters. That is the only thing about her that a friend ever sees.</p>
+
+<p>The app never asks for your child&rsquo;s name, birthday, email address, phone
+number, or location. There is no account to create.</p>
+
+<p>If something goes wrong while sharing, the app writes the error to a file
+inside its own folder on the phone so a grown-up can read it later. It stays on
+the phone.</p>
+
+<h2>What happens to a picture</h2>
+
+<ol>
+  <li>The picture can only be taken with the camera, inside the app. The app
+  cannot open the photo library.</li>
+  <li>Before it is saved, the phone looks for faces in it. Any face it finds is
+  covered with a solid dark block. It is not blurred or pixelated, either of
+  which can sometimes be undone. This happens entirely on the phone; nothing is sent
+  anywhere to do it.</li>
+  <li>Your child then moves and scales the picture into a square. Cropping cannot
+  bring back a face that was already covered.</li>
+  <li>The picture is shrunk to at most 1600 pixels on its longest side and
+  re-saved. Re-saving it this way drops the information the camera attached to
+  the original: where it was taken, when, and on which phone.</li>
+  <li>The original, full-size picture is not kept. The smaller, face-blocked copy
+  is the only picture the app has. It is the one that is stored, the one a
+  friend sees, the one on a notification, and the one in a backup file.</li>
+</ol>
+
+<p>The phone finds most faces, not every face. A face in profile, partly hidden,
+very small, or seen in a reflection may be missed. Please look at the picture
+before your child saves it.</p>
+
+<h2>Where the collection goes</h2>
+
+<p>The collection is stored on the phone. If the phone is signed in to iCloud,
+the app also keeps a copy in that iCloud account, the one your family
+controls, so it is not lost if the phone is. That copy uses your iCloud
+storage and is covered by Apple&rsquo;s iCloud terms, not by anything of ours.</p>
+
+<p>We have no server of our own, and nothing in the app sends your child&rsquo;s
+collection to us.</p>
+
+<p>If the phone is not signed in to iCloud, the collection stays on the phone
+only.</p>
+
+<h2>Who can see it</h2>
+
+<p>Your child, on their phone. Nobody else, unless a grown-up turns sharing
+on.</p>
+
+<p><strong>Sharing is off when the app is installed.</strong> Until a grown-up
+turns it on, there is no button to invite anyone, and no collection can leave the
+phone except as a backup file.</p>
+
+<h3>If a grown-up turns sharing on</h3>
+
+<p>Your child can invite a friend through Apple&rsquo;s own sharing screen. When
+a friend accepts, a copy of the collection arrives on their phone. What crosses
+is:</p>
+
+<ul>
+  <li>Each squishy&rsquo;s name, its picture, its tags, its star ratings and its
+  condition tags.</li>
+  <li>Your child&rsquo;s chosen nickname, as the title of the collection and on
+  anything she sends.</li>
+</ul>
+
+<p>What does <strong>not</strong> cross, ever:</p>
+
+<ul>
+  <li><strong>The notes.</strong> They are kept in a separate file on the phone
+  that is not connected to iCloud at all, and they are not attached to the
+  squishy they are about, so there is no path for a share to carry them. They are
+  labelled in the app as &ldquo;only you can see these&rdquo;.</li>
+  <li><strong>Whether she thinks a squishy is real or fake.</strong> That is kept
+  with the notes, and it is not shown at all on a collection that came from
+  someone else.</li>
+</ul>
+
+<p>A friend can send back two things and nothing else:</p>
+
+<ul>
+  <li><strong>A reaction</strong>, chosen from six fixed symbols: love, so
+  cute, I want one, wow, funny, cool. There is no way to type anything.</li>
+  <li><strong>A trade offer</strong>, if trading has also been turned on. See
+  below.</li>
+</ul>
+
+<p>Only people who were individually invited can open the collection. The app
+sets the share so that a link forwarded to someone who was not invited does not
+let them in.</p>
+
+<div class="card">
+<p><strong>Turning sharing back off does not take access away from a friend who
+already has it.</strong> It only stops new invitations. Removing someone is a
+separate act, done in Apple&rsquo;s own sharing screen, which the app opens
+from &ldquo;Who can see it&rdquo;. The app itself has no way to remove a
+participant.</p>
+</div>
+
+<p>A child on the receiving end can leave a friend&rsquo;s collection, which
+removes that friend&rsquo;s copy from her phone.</p>
+
+<h3>&ldquo;Show this to my friends&rdquo;</h3>
+
+<p>Your child can point her friends at one of her squishies. That sends which
+squishy and when, with no text of any kind. It can be sent once a day per
+squishy, and it stops counting after two weeks. Whether a friend has looked is
+recorded only on that friend&rsquo;s own phone and is never sent back. The same
+is true of the &ldquo;New&rdquo; marker that shows what a friend has added since
+you last looked: it is a date kept on your phone.</p>
+
+<h2>Trade offers</h2>
+
+<p><strong>Trading is off until a grown-up turns it on</strong>, and when it is
+off there is no Trades tab and nothing trade-shaped anywhere in the app.</p>
+
+<p>An offer means &ldquo;these, for that&rdquo;. Your child marks a squishy as up
+for trade; a friend she has already invited picks up to three of their own and
+offers them. The offer carries copies of those squishies (their names and the
+same face-blocked pictures), the friend&rsquo;s nickname, the time, and
+whether the answer is yes, no, or still waiting.</p>
+
+<ul>
+  <li><strong>There is no money in the app.</strong> Nothing is bought, sold or
+  priced, and there is no in-app purchase of any kind.</li>
+  <li><strong>There is no free text on an offer.</strong> The pictures and the
+  names are the whole message. Saying no sends no reason.</li>
+  <li><strong>No strangers.</strong> An offer can only be made on a collection its
+  owner has already invited that person to see.</li>
+  <li><strong>Nothing moves.</strong> Saying yes records an answer. No squishy
+  changes hands in the app; if the children swap, they swap in real life and each
+  updates her own collection.</li>
+</ul>
+
+<p>An offer stops counting after two weeks.</p>
+
+<h2>Notifications</h2>
+
+<p><strong>Notifications are off until a grown-up turns them on</strong>, and iOS
+asks separately. Saying no costs your child nothing in the app, and she is not
+asked again.</p>
+
+<p>If they are on, the app sends one message for everything that happened, about
+a minute after it happened, never one per squishy. A message can only ever
+say that a friend reacted to one of her squishies, that a friend pointed her at
+one of theirs, that a trade offer arrived, or that an offer of hers was answered.
+There are no streaks, no reminders, and nothing asking her to come back.</p>
+
+<p>The message is written on the phone from the app&rsquo;s own words, the
+squishy&rsquo;s name and the friend&rsquo;s nickname; the picture on it is the
+same stored, face-blocked picture. Nothing is sent anywhere to produce a
+notification.</p>
+
+<h2>The grown-up page</h2>
+
+<p>Notifications, sharing, trading and &ldquo;Save a copy&rdquo; all live on one
+page behind one question: a two-digit multiplication written out in words.
+Answering it once opens all four for as long as that page is open, and closing it
+locks them again. A wrong answer gets a new sum, and repeated wrong answers cost
+a short wait.</p>
+
+<p>This is an adult-level task, not a lock. An older child who reads the words
+carefully and reaches for a calculator can get past it. It is there so that the
+switches that change who can see the collection are not something a nine-year-old
+flips by accident.</p>
+
+<h2>Getting the collection out</h2>
+
+<p>A parent can save the whole collection to a file (names, pictures, ratings,
+reactions, notes and the real-or-fake verdicts) from the
+&ldquo;Save a copy&rdquo; screen on the grown-up page. It is behind the grown-up
+question because the file contains the notes. The same screen puts a saved file
+back. Where that file goes is up to the person who made it; the app puts it in
+the share sheet and does nothing else with it.</p>
+
+<h2>Deleting things</h2>
+
+<ul>
+  <li><strong>Delete a squishy in the app</strong> and it is removed from the
+  phone and from the iCloud copy, and the private note about it is deleted with
+  it.</li>
+  <li><strong>Delete the app</strong> and everything on the phone is removed: the
+  collection, the notes, and the records kept only on that phone. A copy of the
+  synced part of the collection stays in your own iCloud account until you remove
+  it there.</li>
+  <li><strong>Stop a friend seeing the collection</strong> in Apple&rsquo;s
+  sharing screen, reached from &ldquo;Who can see it&rdquo;.</li>
+  <li>There is no account to delete, because there is no account.</li>
+</ul>
+
+<h2>Other companies</h2>
+
+<p>None. The app contains no advertising, no analytics, no crash reporting, and
+no software from any company other than Apple. Nothing about your child or their
+phone is sent to anyone.</p>
+
+<h2>Children&rsquo;s privacy</h2>
+
+<p>This app is made for children aged 9 to 11. Nothing your child puts into the
+app reaches us: there is no account, no server of ours, and no third-party code
+in the app. What the app stores is described above, along with the one case
+where something can reach another household: a collection a grown-up chose to
+share.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If the app changes what it does with your child&rsquo;s pictures or words,
+this page changes first, and the date at the top moves.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about anything on this page:
+<a href="mailto:fullcountstattracker+squishiverse@gmail.com">fullcountstattracker+squishiverse@gmail.com</a></p>
+
+<footer>
+  <p><a href="index.html">Back to Squishiverse</a></p>
+</footer>
+
+</div>
+</body>
+</html>

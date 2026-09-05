@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!--
+  Squishiverse home page, for GitHub Pages on a separate public repo.
+
+  Written 2026-09-05. Every claim on this page was checked against app source on
+  `main` at b8ef8ad. Where docs/marketing/app-store-listing.md and
+  docs/marketing/parent-explainer.md disagree with the code, the code won: those
+  two drafts are stale (they say the app has no sharing, use [APP NAME], and say
+  four add-steps where the flow has five) and nothing false was carried over.
+
+  Before publishing:
+    - support address filled: fullcountstattracker+squishiverse@gmail.com
+    - delete the yellow review box
+    - decide whether to keep the "Where the app is today" section (it is there so
+      the page does not imply there is something to download)
+
+  No external CSS, JavaScript, fonts, images or analytics. No app icon and no
+  screenshots: none are cleared for the site. Opens from disk.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Squishiverse: a squishy collection, kept on your own phone</title>
+<meta name="description" content="Squishiverse is an app for children aged 9 to 11 to catalogue their squishy toys. Camera only, faces covered on the phone, no accounts, no ads, no analytics.">
+<style>
+  :root {
+    --bg: #fdf8f5;
+    --panel: #ffffff;
+    --ink: #2f1a28;
+    --soft: #6b5261;
+    --head: #4a1f3d;
+    --accent: #a6376b;
+    --rule: #ecdde5;
+    --hero: #f7e9f0;
+    --note-bg: #fff6dc;
+    --note-rule: #e3c86a;
+    --note-ink: #5a4508;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1c1018;
+      --panel: #261622;
+      --ink: #f2e6ed;
+      --soft: #bfa5b4;
+      --head: #ffd9ea;
+      --accent: #ff9dc4;
+      --rule: #3d2434;
+      --hero: #2d1929;
+      --note-bg: #33270a;
+      --note-rule: #6d5716;
+      --note-ink: #f6e6b4;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+  h1 { font-size: 2.1rem; line-height: 1.15; color: var(--head); margin: 0 0 0.6rem; }
+  h2 { font-size: 1.3rem; line-height: 1.3; color: var(--head); margin: 2.6rem 0 0.7rem; }
+  h3 { font-size: 1.02rem; margin: 1.5rem 0 0.35rem; color: var(--head); }
+  p, li { margin: 0 0 0.9rem; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: 0.6rem; }
+  .hero {
+    background: var(--hero); border-radius: 16px;
+    padding: 1.8rem 1.4rem 1.4rem; margin-bottom: 2rem;
+  }
+  .hero p { margin-bottom: 0.7rem; }
+  .lede { font-size: 1.12rem; }
+  .who {
+    display: inline-block; margin: 0.4rem 0 0;
+    font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+    color: var(--accent);
+  }
+  .card {
+    background: var(--panel); border: 1px solid var(--rule); border-radius: 12px;
+    padding: 1.1rem 1.2rem 0.4rem; margin: 1.2rem 0;
+  }
+  .card h3:first-child { margin-top: 0; }
+  .card ul:last-child { margin-bottom: 0.6rem; }
+  a { color: var(--accent); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+  .policy-link {
+    display: inline-block; margin-top: 0.4rem;
+    font-weight: 700; text-decoration-thickness: 2px; text-underline-offset: 3px;
+  }
+  footer {
+    margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+    color: var(--soft); font-size: 0.92rem;
+  }
+  footer p { margin-bottom: 0.5rem; }
+  @media (max-width: 26rem) {
+    body { font-size: 17px; }
+    h1 { font-size: 1.75rem; }
+    .hero { padding: 1.3rem 1.1rem 1rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="hero">
+  <h1>Squishiverse</h1>
+  <p class="lede">A place for a child to keep track of their squishy toys. Take
+  a picture of each one, give it a name, rate how it squishes, and tag what it
+  looks, feels, sounds and smells like.</p>
+  <p class="who">Made for ages 9 to 11 · iPhone and iPad</p>
+</div>
+
+<p><a class="policy-link" href="privacy.html">Read the privacy policy</a></p>
+
+<h2>What it does with your child's pictures and words</h2>
+
+<div class="card">
+<ul>
+  <li><strong>The camera is the only way to add a picture.</strong> The app
+  cannot open the photo library on the phone, and never asks to.</li>
+  <li><strong>Faces are covered before a picture is saved.</strong> The phone
+  looks for faces and paints a solid block over any it finds. This happens on
+  the phone, with nothing uploaded to do it, and a solid block cannot be undone
+  the way pixelation sometimes can.</li>
+  <li><strong>The picture is shrunk and re-saved from scratch</strong>, at most
+  1600 pixels on its longest side. That drops what the camera attached to it:
+  where it was taken, when, and on which phone. The original is not kept.</li>
+  <li><strong>There is no account and no sign-up.</strong> The app never asks
+  for a surname, a birthday, an email address or a location.</li>
+  <li><strong>There is no server of ours.</strong> The collection is stored on
+  the phone and, if the phone is signed in to iCloud, copied to your family's
+  own iCloud account. Nothing in the app sends it to us.</li>
+  <li><strong>The notes your child writes never leave the phone.</strong> They
+  are kept in a separate place that is not connected to iCloud at all, so they
+  cannot travel to a friend, or even to your child's own other devices.</li>
+  <li><strong>No ads, no analytics, no crash reporting, no tracking</strong>,
+  and no code from any company other than Apple.</li>
+</ul>
+</div>
+
+<h2>Showing it to a friend</h2>
+
+<p>Kids want to show people, so the app can do that. Not on its own
+initiative, though, and not with anything typed.</p>
+
+<div class="card">
+<ul>
+  <li><strong>Sharing is off when the app is installed.</strong> The invite
+  button is not on the screen at all until a grown-up switches sharing on in
+  Settings, past a question written out in words rather than digits.</li>
+  <li><strong>Invitations go to named people</strong>, one at a time, through
+  Apple's own sharing screen. A forwarded link does not let anyone else in.
+  Nothing is searchable, browsable or public.</li>
+  <li><strong>A friend can react with one of six symbols</strong> (❤️ 🥰 🤩 😮
+  😂 😎), point at one squishy to say "look at this one", or make a trade offer.
+  That is the whole list.</li>
+  <li><strong>There is no chat and no message box anywhere in the app.</strong>
+  A friend has nothing to type into.</li>
+  <li><strong>The only thing about your child that a friend sees is a nickname</strong>
+  your child chooses, up to 20 characters. Everything else on the screen is
+  about a toy.</li>
+</ul>
+</div>
+
+<h2>Trading, if you want it</h2>
+
+<p>Trading is a separate switch, also off until a grown-up turns it on. A
+friend can offer up to three of their squishies for one of your child's that is
+marked as up for trade, and your child says yes or no. There is no money
+anywhere in the app, no prices, and no free text on an offer. Saying yes
+records an answer; any real swap happens between two families, in the real
+world.</p>
+
+<h2>Notifications</h2>
+
+<p>There are none unless somebody asks for them. Turning them on is behind the
+grown-up question; turning them off is not. When they are on, they arrive
+batched into one message and only ever report something a friend actually did.
+No streaks, no reminders, nothing built to pull a child back in.</p>
+
+<h2>Things we would rather you heard from us</h2>
+
+<p>Every app's safety page sounds the same. These are the parts that are not
+tidy:</p>
+
+<ul>
+  <li><strong>Face detection finds most faces, not every face.</strong> A face
+  in profile, partly hidden, very small, or in a reflection can be missed. The
+  app says on screen when it has covered one, and it is worth a look at the
+  picture before saving.</li>
+  <li><strong>Turning the sharing switch back off does not take back access
+  already given.</strong> It only stops new invitations. Removing someone who
+  already has access is done in Apple's own sharing screen, and the app says so
+  where the switch is.</li>
+  <li><strong>The copy in your iCloud is yours to delete.</strong> Deleting the
+  app clears the phone, including every note, but the synced part stays in your
+  own iCloud account until you remove it there.</li>
+  <li><strong>A grown-up can export the whole collection to a file</strong>,
+  including the notes, which is exactly why that screen is behind the grown-up
+  question. Where the file goes afterwards is up to whoever made it.</li>
+</ul>
+
+<h2>What a child actually does with it</h2>
+
+<ul>
+  <li>Adds a squishy in five short steps. Only the name is required; every
+  other step can be skipped.</li>
+  <li>Rates it on twelve things (overall, satisfying, squish, slow-rise,
+  softness, stretchiness, texture, sound, smell, cuteness, tough and rarity),
+  with half stars allowed.</li>
+  <li>Tags type, filling, colours, size, texture, sound, smell, and where it
+  came from.</li>
+  <li>Picks a favourite, and a number one.</li>
+  <li>Keeps notes that are theirs alone.</li>
+  <li>Looks at the whole collection as a grid, searches it, and filters it.</li>
+</ul>
+
+<h2>Where the app is today</h2>
+
+<p>Squishiverse is not on the App Store, and there is nothing on this page to
+download. It was built for one family and runs on their own phones. This page
+exists so that anyone who is offered the app can read, first, what it does with
+a child's pictures and words.</p>
+
+<h2>Privacy policy and contact</h2>
+
+<p><a class="policy-link" href="privacy.html">Read the full privacy policy →</a></p>
+
+<p>Questions, from parents or anyone else:
+<a href="mailto:fullcountstattracker+squishiverse@gmail.com">fullcountstattracker+squishiverse@gmail.com</a></p>
+
+<footer>
+  <p>Squishiverse is made by one parent, for one child and her friends. It is not
+  affiliated with, endorsed by, or connected to any squishy manufacturer or
+  brand.</p>
+  <p><a href="privacy.html">Privacy policy</a></p>
+</footer>
+
+</div>
+</body>
+</html>
