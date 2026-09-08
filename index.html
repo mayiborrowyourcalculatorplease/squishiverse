@@ -8,11 +8,17 @@
   two drafts are stale (they say the app has no sharing, use [APP NAME], and say
   four add-steps where the flow has five) and nothing false was carried over.
 
+  Corrected 2026-09-07 on branch `copy-corrections`, after Apple's sharing sheet
+  was retired: invitations are now the app's own screen ("Send invitation"),
+  removal is the app's own screen ("Who can see it"), the nudge has no daily
+  limit, and only the owner sends a nudge. Adding, removal and auto-open were
+  verified on hardware by Courtney on 2026-09-07 between two phones. An
+  invitation by phone number has not been separately confirmed; email has.
+
   Before publishing:
     - support address filled: fullcountstattracker+squishiverse@gmail.com
     - delete the yellow review box
-    - decide whether to keep the "Where the app is today" section (it is there so
-      the page does not imply there is something to download)
+    - "Where the app is today" was removed 2026-09-07 for the App Store submission
 
   No external CSS, JavaScript, fonts, images or analytics. No app icon and no
   screenshots: none are cleared for the site. Opens from disk.
@@ -26,7 +32,7 @@
 <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta name="theme-color" content="#542e5f">
-<meta name="description" content="Squishiverse is an app for children aged 9 to 11 to catalogue their squishy toys. Camera only, faces covered on the phone, no accounts, no ads, no analytics.">
+<meta name="description" content="Squishiverse is an app for children aged 9 to 11 to catalog their squishy toys. Camera only, faces covered on the phone, no accounts, no ads, no analytics.">
 <style>
   :root {
     --bg: #fdf8f5;
@@ -136,9 +142,7 @@
          alt="The Squishiverse app icon: a smiling pink bun in a starry purple sky">
     <div class="herobar-text">
       <h1>Squishiverse</h1>
-      <p class="lede">A place for a child to keep track of their squishy toys.
-      Take a picture of each one, give it a name, rate how it squishes, and tag
-      what it looks, feels, sounds and smells like.</p>
+      <p class="lede">A place for kids to collect, rate and trade squishies.</p>
       <p class="who">Made for ages 9 to 11 &middot; iPhone</p>
     </div>
   </div>
@@ -184,12 +188,15 @@ initiative, though, and never as a message.</p>
   <li><strong>Sharing is off when the app is installed.</strong> The invite
   button is not on the screen at all until a grown-up switches sharing on in
   Settings, past a question written out in words rather than digits.</li>
-  <li><strong>Invitations go to named people</strong>, one at a time, through
-  Apple's own sharing screen. A forwarded link does not let anyone else in.
-  Nothing is searchable, browsable or public.</li>
+  <li><strong>Invitations go to named people, one at a time.</strong> Your
+  child picks a friend from Contacts or types their phone number or email
+  address, the app checks that an Apple Account uses it, and hands back a link
+  to send. A forwarded link does not let anyone else in. Nothing is searchable,
+  browsable or public.</li>
   <li><strong>A friend can react with one of six symbols</strong> (❤️ 🥰 🤩 😮
-  😂 😎), point at one squishy to say "look at this one", or make a trade offer.
-  That is the whole list.</li>
+  😂 😎) or make a trade offer. That is the whole list. Your child can point
+  friends at one of her squishies to say "look at this one"; that carries no
+  words.</li>
   <li><strong>There is no chat and no message box anywhere in the app.</strong>
   A friend cannot write to your child. The only words of theirs your child ever
   sees are the name they picked for themselves and the names they gave their own
@@ -207,7 +214,7 @@ friend can offer up to three of their squishies for one of your child's that is
 marked as up for trade, and your child says yes or no. There is no money
 anywhere in the app and no prices, and an offer carries no message: the
 pictures and the names your friend gave her own squishies are the whole of it.
-Saying yes records an answer; any real swap happens between two families, in
+Saying yes is only an answer; any real swap happens between two families, in
 the real world.</p>
 
 <h2>Notifications</h2>
@@ -218,10 +225,72 @@ both need the sum. When they are on, they arrive batched into one message and
 only ever report something a friend actually did. No streaks, no reminders,
 nothing built to pull a child back in.</p>
 
-<h2>Things we would rather you heard from us</h2>
+<h2>What a child actually does with it</h2>
 
-<p>Every app's safety page sounds the same. These are the parts that are not
-tidy:</p>
+<ul>
+  <li>Adds a squishy in five short steps. Only the name is required; every
+  other step can be skipped.</li>
+  <li>Rates it and tags it, from the lists below.</li>
+  <li>Picks a favorite, and a number one.</li>
+  <li>Keeps notes that are theirs alone.</li>
+  <li>Looks at the whole collection as a grid, searches it, and filters it.</li>
+</ul>
+
+<h2>The ratings and the tags</h2>
+
+<p>Almost everything is a tap on a fixed list, so there is very little to
+type. The only words that are her own are the squishy's name, its brand if it
+is not on the list, its type if it is not on the list, and where it came from.</p>
+
+<h3>Eleven ratings, each out of five stars, half stars allowed</h3>
+
+<div class="card">
+<ul>
+  <li><strong>Overall.</strong> All things considered.</li>
+  <li><strong>Satisfying.</strong> How good is it to just keep squishing?</li>
+  <li><strong>Squish.</strong> Does it squish easily, or fight back?</li>
+  <li><strong>Softness.</strong> Firm, or pillowy?</li>
+  <li><strong>Stretchy.</strong> How far does it stretch?</li>
+  <li><strong>Texture.</strong> How does the outside feel?</li>
+  <li><strong>Sound.</strong> Pop, slap, crunch, or silent?</li>
+  <li><strong>Smell.</strong> Does it smell good, or like paint?</li>
+  <li><strong>Cuteness.</strong> How cute is it, honestly?</li>
+  <li><strong>Tough.</strong> Will it pop?</li>
+  <li><strong>Rare.</strong> How hard was it to find?</li>
+</ul>
+</div>
+
+<h3>The tags, every one of them</h3>
+
+<div class="card">
+<ul>
+  <li><strong>Type:</strong> Dumpling, Nee-Doh, Taba, Mochi, Butter, Smushers,
+  Squishmallow, Other. She can type a kind that is not listed.</li>
+  <li><strong>Brand:</strong> a couple of suggestions, or her own word.</li>
+  <li><strong>Inside:</strong> Foam, Silicone, Dough, Vaseline, Gel, Beads, Air,
+  Paper, Plush, Something else, Not sure.</li>
+  <li><strong>Color,</strong> a main one and a second one: Pink, Purple, Blue,
+  Green, Yellow, Orange, Red, White, Gray, Black, Rainbow, Clear.</li>
+  <li><strong>Size:</strong> Keychain, Tiny, Mini, Medium, Jumbo, Giant.</li>
+  <li><strong>Feels:</strong> Smooth, Bumpy, Fuzzy, Sticky, Glitter, Matte,
+  Jiggly, Velvety, Silky, Crunchy, Air bubbles, Slow rise.</li>
+  <li><strong>Sound:</strong> Silent, Pop, Slap, Crunch, Squeak, Crinkle.</li>
+  <li><strong>Smell:</strong> No scent, Chemical / painty, Strawberry, Fruity,
+  Vanilla, Candy, Marshmallow, Butter, Chocolate, Something else.</li>
+  <li><strong>How it's holding up</strong> (as many as are true): Like new,
+  Popped, Has a hole, Gone hard, Went flat, Sticky, Turning yellow, Cracked,
+  Dirty, Fixed it, Made over.</li>
+  <li><strong>Up for trade,</strong> a switch on the squishy's own page, which
+  only matters once a grown-up has turned trading on.</li>
+  <li><strong>Where it came from,</strong> and when: a shop, a friend, a
+  birthday. Her own words.</li>
+</ul>
+</div>
+
+
+<h2>Limitations</h2>
+
+<p>The parts that are not tidy:</p>
 
 <ul>
   <li><strong>Face detection finds most faces, not every face.</strong> A face
@@ -229,38 +298,16 @@ tidy:</p>
   app says on screen when it has covered one, and it is worth a look at the
   picture before saving.</li>
   <li><strong>Turning the sharing switch back off does not take back access
-  already given.</strong> It only stops new invitations. Removing someone who
-  already has access is done in Apple's own sharing screen, and the app says so
-  where the switch is.</li>
+  already given.</strong> It only stops new invitations. To take a friend off,
+  open "Who can see it" on the Mine tab, tap their name, and tap Remove Share.
+  The app says so where the switch is.</li>
   <li><strong>The copy in your iCloud is yours to delete.</strong> Deleting the
-  app clears the phone, including every note, but the synced part stays in your
-  own iCloud account until you remove it there.</li>
+  app clears the phone, including every note, but the copy of the collection in
+  your own iCloud account stays until you remove it there.</li>
   <li><strong>A grown-up can export the whole collection to a file</strong>,
   including the notes, which is exactly why that screen is behind the grown-up
   question. Where the file goes afterwards is up to whoever made it.</li>
 </ul>
-
-<h2>What a child actually does with it</h2>
-
-<ul>
-  <li>Adds a squishy in five short steps. Only the name is required; every
-  other step can be skipped.</li>
-  <li>Rates it on eleven things (overall, satisfying, squish, softness,
-  stretchiness, texture, sound, smell, cuteness, tough and rarity), with half
-  stars allowed.</li>
-  <li>Tags type, filling, colours, size, texture, sound, smell, and where it
-  came from.</li>
-  <li>Picks a favourite, and a number one.</li>
-  <li>Keeps notes that are theirs alone.</li>
-  <li>Looks at the whole collection as a grid, searches it, and filters it.</li>
-</ul>
-
-<h2>Where the app is today</h2>
-
-<p>Squishiverse is not on the App Store, and there is nothing on this page to
-download. It was built for one family and runs on their own phones. This page
-exists so that anyone who is offered the app can read, first, what it does with
-a child's pictures and words.</p>
 
 <h2>Privacy policy and contact</h2>
 
