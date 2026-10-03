@@ -134,7 +134,7 @@
     <p class="kicker"><a href="index.html">Squishiverse</a></p>
   </div>
   <h1>Privacy policy</h1>
-  <p class="updated">Last updated: 7 September 2026</p>
+  <p class="updated">Last updated: 3 October 2026</p>
 </header>
 
 <p class="lede">Squishiverse is an app for children to keep track of their
@@ -214,6 +214,19 @@ storage and is covered by Apple&rsquo;s iCloud terms, not by anything of ours.</
 <p>We have no server of our own, and nothing in the app sends your child&rsquo;s
 collection to us.</p>
 
+<p>The one exception, added 2026-09-29, is not about the collection at all:
+if Squishiverse was installed from the App Store, it asks Apple&rsquo;s own App
+Store catalog, at most once an hour, whether a newer version has been
+published. That question carries only the app&rsquo;s own identity, the same
+thing anyone can see by looking the app up on the App Store themselves, and
+never anything about your child, her collection, or her phone. It does not
+happen on a development build or a TestFlight build, since only an App Store
+install has a version to compare against. If a newer version is found, the
+app shows a small message saying so, with an OK that hides it until the next
+one. The message is only a message: it does not open the App Store, and
+nothing in Squishiverse takes a child out of the app except the privacy
+policy link, which sits behind the grown-up question.</p>
+
 <p>If the phone is not signed in to iCloud, the collection stays on the phone
 only.</p>
 
@@ -231,8 +244,16 @@ phone except as a backup file.</p>
 <p>Your child can invite a friend from inside the app, by picking the friend
 from Contacts or typing their phone number or email address. The app checks
 that an Apple Account uses it, adds that person, and gives your child a link to
-send through the phone&rsquo;s own share sheet. When the friend opens the link,
-a copy of the collection arrives on their phone. What crosses is:</p>
+send, opening Messages or Mail directly when it can, addressed and ready to
+send. When the friend opens the link, a copy of the collection arrives on their
+phone. What crosses is:</p>
+
+<p>If your child picks the friend from Contacts, the app remembers that
+friend&rsquo;s name <strong>on this phone only</strong>, so the invitation can
+say &ldquo;waiting for Bea&rdquo; rather than a bare phone number while it has
+not yet been accepted. It is removed the moment the invitation is accepted or
+taken back, is never sent anywhere, and is not kept for a handle your child
+types rather than picks.</p>
 
 <ul>
   <li>Each squishy&rsquo;s name, its picture, its tags, its star ratings and its
@@ -331,11 +352,10 @@ notification.</p>
 
 <h2>The grown-up page</h2>
 
-<p>Notifications, sharing, trading and &ldquo;Save a copy&rdquo; all live on one
-page behind one question: a two-digit multiplication written out in words.
-Answering it once opens all four for as long as that page is open, and closing it
-locks them again. A wrong answer gets a new sum, and repeated wrong answers cost
-a short wait.</p>
+<p>Notifications, sharing and trading live on one page behind one question: a
+two-digit multiplication written out in words. Answering it once opens all three
+for as long as that page is open, and closing it locks them again. A wrong answer
+gets a new sum, and repeated wrong answers cost a short wait.</p>
 
 <p>This is an adult-level task, not a lock. An older child who reads the words
 carefully and reaches for a calculator can get past it. It is there so that the
@@ -345,11 +365,12 @@ flips by accident.</p>
 <h2>Getting the collection out</h2>
 
 <p>A parent can save the whole collection to a file (names, pictures, ratings,
-reactions, notes and the real-or-fake verdicts) from the
-&ldquo;Save a copy&rdquo; screen on the grown-up page. It is behind the grown-up
-question because the file contains the notes. The same screen puts a saved file
-back. Where that file goes is up to the person who made it; the app puts it in
-the share sheet and does nothing else with it.</p>
+reactions, notes and the real-or-fake verdicts) from the &ldquo;Backup and
+restore&rdquo; screen, reached from the gear on the first tab. That screen is not
+behind the grown-up question. The screen itself says, in plain view, that the
+file contains the private notes, so whoever makes the file knows what is in it.
+The same screen puts a saved file back. Where that file goes is up to the person
+who made it; the app puts it in the share sheet and does nothing else with it.</p>
 
 <h2>Deleting things</h2>
 
